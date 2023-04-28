@@ -54,7 +54,7 @@ function App() {
           <TemperatureAndDetails weather={weather} />
 
           {/* <Forecast title="hourly forecast" items={weather.hourly} />
-          <Forecast title="Daily forecast" items={weather.daily} /> */}
+          <Forecast title="Daily forecast" items={weather.daly} /> */}
         </div>
       )}
       <ToastContainer
