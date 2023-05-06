@@ -46,7 +46,7 @@ function App() {
     bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-lg shadow-gray-400 ${formatBackground()}`}
     >
       <TopButtons setQuery={setQuery} />
-      <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
+      <Inputs setQuery={setQuery} units={units} setUnits={setUnit} />
       {/* Jai Mata Di */}
       {weather && (
         <div>
