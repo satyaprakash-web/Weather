@@ -64,7 +64,7 @@ function Inputs({ setQuery, units, setUnits }) {
           <button
             name="imperial"
             className="text-xl text-white font-light transition
-             ease-out hover:scale-125"
+             ease-out hover:scale-124"
             onClick={handleUnitsChange}
           >
             °F
