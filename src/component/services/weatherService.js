@@ -84,7 +84,7 @@ const getFormattedWeatherData = async (searchParams) => {
     // ...formattedForecastWeather
   };
 };
-// npm i luxo
+// npm i luxon
 const formatToLocalTime = (
   secs,
   zone,
