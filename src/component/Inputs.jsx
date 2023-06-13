@@ -74,5 +74,5 @@ function Inputs({ setQuery, units, setUnits }) {
     </div>
   );
 }
-
+// 
 export default Inputs;
