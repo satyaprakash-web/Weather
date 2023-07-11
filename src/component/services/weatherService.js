@@ -82,6 +82,7 @@ const getFormattedWeatherData = async (searchParams) => {
   return {
     ...formattedCurrentWeather,
     // ...formattedForecastWeather
+    // 
   };
 };
 // npm i luxon
