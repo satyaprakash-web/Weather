@@ -63,7 +63,6 @@ const formatForecastWeather = (data) => {
 
   return { timezone, daily, hourly };
 };
-// 
 const getFormattedWeatherData = async (searchParams) => {
   const formattedCurrentWeather = await getWeatherData(
     "weather",
