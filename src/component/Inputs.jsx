@@ -6,15 +6,20 @@ import "react-toastify/dist/ReactToastify.css";
 function Inputs({ setQuery, units, setUnits }) {
   const [city, setCity] = useState("");
 
+  //  to change the temperature unit.
   const handleUnitsChange = (e) => {
     const selectedUnit = e.currentTarget.name;
     if (units !== selectedUnit) setUnits(selectedUnit);
   };
 
+  // The handleSearchClick function is called when the user clicks the "Search by city" button. 
   const handleSearchClick = () => {
     if (city != "") setQuery({ q: city });
   };
 
+  // "Search by location" button. it uses the navigator.geolocation API to get the user's current location. Once the location 
+  // is fetched, the setQuery state is called with an object with the lat and lon properties set to the user's latitude and longitude.
+  
   const handleLocationClick = () => {
     if (navigator.geolocation) {
       toast.info("Fetching users location!");
@@ -76,3 +81,7 @@ function Inputs({ setQuery, units, setUnits }) {
 }
 // 
 export default Inputs;
+
+//  the Inputs component renders a city input field, two radio buttons for selecting the temperature unit, 
+// and two buttons for searching by city and location. It passes the user's input to the setQuery and setUnits 
+// state props, which are used to fetch and display the weather data.
