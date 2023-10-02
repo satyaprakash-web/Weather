@@ -1,6 +1,8 @@
 import React from 'react'
 import { formatToLocalTime } from './services/weatherService'
 
+// The TimeandLocation component displays the current local time and location, 
+// formatted using the formatToLocalTime function.
 function TimeandLocation({weather: {dt, timezone, name, country}}) {
   return <div>
     <div className="flex items-center justify-center my-6">
