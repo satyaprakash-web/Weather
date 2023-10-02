@@ -41,3 +41,7 @@ function TopButtons({ setQuery }) {
 }
 
 export default TopButtons;
+
+// The TopButtons component takes a setQuery prop and renders a list of buttons,
+// one for each city in the cities prop. When a button is clicked, the setQuery prop is called
+// with the city name as the parameter and this fetch the weather data for that city.
