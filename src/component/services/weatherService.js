@@ -83,7 +83,7 @@ const getFormattedWeatherData = async (searchParams) => {
 const formatToLocalTime = (
   secs,
   zone,
-  format = "cccc, dd LLL yyyy' | Local time:'hh:mm a"
+  format = "cccc, dd LLL yyyy' | Local time: 'hh:mm a"
 ) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
 
 //  It constructs the URL with the OpenWeatherMap API and the specific icon
